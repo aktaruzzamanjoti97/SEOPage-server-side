@@ -48,6 +48,10 @@ app.get('/file-list', (req, res) => {
     });
 });
 
+app.use('/', (req, res) => {
+    res.json({ message: 'Hello server' })
+})
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
