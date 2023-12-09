@@ -34,6 +34,7 @@ app.get('/file-count', (req, res) => {
     });
 });
 
+
 app.get('/file-list', (req, res) => {
     fs.readdir('uploads/', (err, files) => {
         if (err) {
